@@ -4,52 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="data:,">
-
+  <link rel="stylesheet" href="style.css">
   <title>Garagentor Controller</title>
 
   <script
     type="module"
     src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js">
   </script>
-
-  <style>
-    body{
-      font-family: Arial,sans-serif;
-      max-width:700px;
-      margin:50px auto;
-      padding:20px;
-      text-align:center;
-    }
-
-    .card{
-      border:1px solid #ddd;
-      border-radius:12px;
-      padding:30px;
-    }
-  </style>
 </head>
 
 <body>
+  <div class="card">
+    <h1>🚪 Garagentor Controller</h1>
+    <p>Firmware-Installation für ESP8266-01/ESP-01</p>
+    <h2>1. Installation</h2>
+    <p>ESP per USB anschließen folgende Schritte ausführen:</p>
+    <ol>
+      <li>Connect Button drücken und den seriellen Port auswählen</li>
+      <li>Firmware auswählen und installieren klicken</li>
+      <li>Nach erfolgreicher Installation ESP mit WLAN verbinden</li>
+    </ol>
 
-<div class="card">
+    <aside class="hinweis-box">
+      <strong>Hinweis:</strong> Merken sie sich die 6 Zahlen hinter gateconfig-xxyyzz!
+    </aside>
 
-<h1>🚪 Garagentor Controller</h1>
 
-<p>
-Firmware-Installation für ESP8266
-</p>
 
-<p>
-ESP per USB anschließen und auf
-„Installieren“ klicken.
-</p>
+    <h2>2. WLAN Verbindung herstellen</h2>
+    <ol>
+      <li>ESP neu starten</li>
+      <li>Der ESP macht einen Access-Point auf "gateconfig-xxyyzz"</li>
+      <li>Mit diesem Access-Point verbinden</li>
+      <li>Web-Seite aufrufen: "http://192.168.4.1"</li>
+      <li>Zugangsdaten vom WLAN eintragen und mit OK bestätigen</li>
+      <li>Nun bootet der ESP neu ud ist unter "http://gate-xxyyzz" erreichbar</li>
+    </ol>
 
-<esp-web-install-button
-  manifest="manifest.json">
-</esp-web-install-button>
 
-</div>
+    <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
+  </div>
 
+  <script src="main.js"></script>
 </body>
 </html>
-
