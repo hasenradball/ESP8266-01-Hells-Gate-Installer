@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="data:,">
+
+  <title>Garagentor Controller</title>
+
+  <script
+    type="module"
+    src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js">
+  </script>
+
+  <style>
+    body{
+      font-family: Arial,sans-serif;
+      max-width:700px;
+      margin:50px auto;
+      padding:20px;
+      text-align:center;
+    }
+
+    .card{
+      border:1px solid #ddd;
+      border-radius:12px;
+      padding:30px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>🚪 Garagentor Controller</h1>
+
+<p>
+Firmware-Installation für ESP8266
+</p>
+
+<p>
+ESP per USB anschließen und auf
+„Installieren“ klicken.
+</p>
+
+<esp-web-install-button
+  manifest="manifest.json">
+</esp-web-install-button>
+
+</div>
+
+</body>
+</html>
+
