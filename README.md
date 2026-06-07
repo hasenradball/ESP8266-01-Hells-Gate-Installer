@@ -11,8 +11,8 @@ normally on a ESP-01.
   * [Flash Procedure](#flash-procedure)
   * [First Boot](#first-boot)
 * [Pin Configuration](#pins--gpios-which-are-used)
-* [Licence](#license)
-* [Helful Links](#helpful-links)
+* [License](#license)
+* [Helpful Links](#helpful-links)
 
 
 ## How to use this Project
@@ -20,7 +20,7 @@ This project can typically used as a door opener for a garage.
 
 a) The ESP can identify the state of the door normally by a reed contactor, if the door is closed the button gets green to signalize Door is closed.
 
-b) If you press the button the relais closes about 800 ms and the motor starts to move. If the Door leaves the the reed contacor the button gets red to signalize a not closed door.
+b) If you press the button the relais closes about 800 ms and the motor starts to move. If the Door leaves the the reed contactor the button gets red to signalize a not closed door.
 
 It is the same procedure than you push the button in your garage.
 
@@ -46,11 +46,11 @@ After the flash procedure restart the ESP. Then the ESP will open an access poin
 2) load the web site `http://192.168.4.1`
 3) You should see input fields
    
-   a) Remeber the hostname `gate-xxyyzz`
-   b) enter `ssid` and `password`
+   a) Remember the hostname `gate-xxyyzz`
+   b) enter `SSID` and `password`
    c) click `ok`
    d) chip will reboot.
-4) the Application will be avaliable at<br>`http://gate-xxyyzz`
+4) the Application will be available at<br>`http://gate-xxyyzz`
 
 ## Pins / GPIOs which are used
 | PIN     | Biasing   | usage       |
@@ -61,7 +61,7 @@ After the flash procedure restart the ESP. Then the ESP will open an access poin
 | GPIO 3  | PullDown  |  Relais activation |
 
 # License
-This library is licensed under MIT [Licence](https://github.com/hasenradball/ESP8266-01-Hells-Gate-Installer/blob/main/LICENSE)
+This library is licensed under MIT [License](https://github.com/hasenradball/ESP8266-01-Hells-Gate-Installer/blob/main/LICENSE)
 
 
 # Helpful Links
