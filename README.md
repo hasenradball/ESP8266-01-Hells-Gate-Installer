@@ -11,6 +11,7 @@ normally on a ESP-01.
   * [Flash Procedure](#flash-procedure)
   * [First Boot](#first-boot)
 * [Pin Configuration](#pins--gpios-which-are-used)
+* [Version decoding](#version-decoding)
 * [License](#license)
 * [Helpful Links](#helpful-links)
 
@@ -59,6 +60,37 @@ After the flash procedure restart the ESP. Then the ESP will open an access poin
 | GPIO 1  | PullUp    |  TX         |
 | GPIO 2  | PullUP    |  Door state |
 | GPIO 3  | PullDown  |  Relais activation |
+
+## Version decoding
+In the footer the version is printed as e.g.: `v1.2.0 - ABCD`.
+The four letters represent numbers which are explained below:
+
+### A - decode websocket usage
+| number | usage                                         |
+| ------ | --------------------------------------------- |
+| 0      | use simple http request, no websocket used  |
+| 1      | use websocket server                          |
+
+### B - decode GPIO 3/RX pin usage for relais
+| number | usage                            |
+| ------ | -------------------------------- |
+| 0      | Pin 3 not used for relais switch |
+| 1      | switch relais by GPIO pin 3/RX   |
+
+### C - decode additional hardware used
+| number | usage                        |
+| ------ | ---------------------------- |
+| 0      | no additional hardware used  |
+| 1      | PCF8574 GPIO expander used   |
+| 2      | MCP23008 GPIO expander used  |
+
+### D - decode additional sensor used
+| number | usage                           |
+| ------ | ------------------------------- |
+| 0      | no additional sensor used       |
+| 1      | DS18x20 temperature sensor used |
+| 2      | AM2302 sensor used              |
+| 2      | Bosch BME280 sensor used        |
 
 # License
 This library is licensed under MIT [License](https://github.com/hasenradball/ESP8266-01-Hells-Gate-Installer/blob/main/LICENSE)
