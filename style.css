@@ -26,3 +26,11 @@ p {
   line-height: 1.65;
   margin: 0.9rem 0;
 }
+
+.d-none {
+  display: none;
+}
+
+.button-container {
+  text-align: center;
+}

@@ -56,7 +56,7 @@ After the flash procedure restart the ESP. Then the ESP will open an access poin
 ## Pins / GPIOs which are used
 | PIN     | Biasing   | usage       |
 | ------  | --------  | -----       |
-| GPIO 0  | PullUp    |  Flash mode           |
+| GPIO 0  | PullUp    |  Flash mode / AM2302-Sensor |
 | GPIO 1  | PullUp    |  TX         |
 | GPIO 2  | PullUP    |  Door state |
 | GPIO 3  | PullDown  |  Relais activation |

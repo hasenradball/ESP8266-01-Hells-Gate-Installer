@@ -20,6 +20,7 @@
     <h2>1. Installation</h2>
     <p>ESP per USB anschließen folgende Schritte ausführen:</p>
     <ol>
+      <li>Variante auswählen</li>
       <li>Connect Button drücken und den seriellen Port auswählen</li>
       <li>Firmware auswählen und installieren klicken</li>
       <li>Nach erfolgreicher Installation ESP mit WLAN verbinden</li>
@@ -39,8 +40,21 @@
       <li>Nun bootet der ESP neu und ist unter "http://gate-xxyyzz" erreichbar</li>
     </ol>
 
-    <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
-  </div>
+     <p>Select your product:</p>
+      <ol class="radios">
+        <li>
+          <label><input type="radio" name="type" value="basic" /> Basic version without any sensor support </label>
+        </li>
+        <li>
+          <label><input type="radio" name="type" value="am2302" /> Basic version with AM2302-Sensor support</label>
+        </li>
+      </ol>
+      <div class="button-container d-none">
+        <esp-web-install-button></esp-web-install-button>
+      </div>
 
+    <!--esp-web-install-button manifest="manifest.json"></esp-web-install-button-->
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>
