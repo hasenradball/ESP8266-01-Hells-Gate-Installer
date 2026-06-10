@@ -90,7 +90,7 @@ The four letters represent numbers which are explained below:
 | 0      | no additional sensor used       |
 | 1      | DS18x20 temperature sensor used |
 | 2      | AM2302 sensor used              |
-| 2      | Bosch BME280 sensor used        |
+| 3      | Bosch BME280 sensor used        |
 
 # License
 This library is licensed under MIT [License](https://github.com/hasenradball/ESP8266-01-Hells-Gate-Installer/blob/main/LICENSE)
