@@ -2,6 +2,8 @@
 It is a ESP Web Tools Application which installs the Hells-Gate Door Opener on your ESP8266
 normally on a ESP-01.
 
+This is based on the official [ESP Web Tools](https://esphome.github.io/esp-web-tools/).
+
 ![Hells-Gate](./docs/hells_gate.png)
 
 ## Contents
