@@ -4,7 +4,7 @@ normally on a ESP-01.
 
 This is based on the official [ESP Web Tools](https://esphome.github.io/esp-web-tools/).
 
-![Hells-Gate](./docs/hells_gate.png)
+<img src="./docs/hells_gate.gif" alt="hell_gate.jpeg" style="width:50%; height:auto;">
 
 ## Contents
 * [How to Use This Project](#how-to-use-this-project)
