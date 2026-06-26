@@ -1,14 +1,14 @@
 {
    "name": "Hells-Gate-Controller Basic",
-   "version": "1.5.0",
+   "version": "1.5.1",
    "new_install_prompt_erase": true,
    "builds": [
     {
-      "version": "1.5.0 - Standard",
+      "version": "1.5.1 - Standard",
       "chipFamily": "ESP8266",
       "parts": [
         {
-          "path": "firmware/hells_gate_v1_5_0.bin",
+          "path": "firmware/hells_gate_v1_5_1.bin",
           "offset": 0
         }
       ]

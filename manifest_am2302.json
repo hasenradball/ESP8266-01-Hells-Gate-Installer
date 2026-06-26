@@ -1,14 +1,14 @@
 {
    "name": "Hells-Gate-Controller AM2302",
-   "version": "1.5.0",
+   "version": "1.5.1",
    "new_install_prompt_erase": true,
    "builds": [
     {
-      "version": "1.5.0 - AM2302",
+      "version": "1.5.1 - AM2302",
       "chipFamily": "ESP8266",
       "parts": [
         {
-          "path": "firmware/hells_gate_v1_5_0_AM2302.bin",
+          "path": "firmware/hells_gate_v1_5_1_AM2302.bin",
           "offset": 0
         }
       ]
