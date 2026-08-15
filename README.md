@@ -4,7 +4,18 @@ normally on a ESP-01.
 
 This is based on the official [ESP Web Tools](https://esphome.github.io/esp-web-tools/).
 
-<img src="./docs/hells_gate.gif" alt="hell_gate.jpeg" style="width:50%; height:auto;">
+ESP01 as GateDoorsOpener
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+  <img src="./docs/hells_gate.gif" alt="hell_gate.jpeg" style="width: 30%; height: auto;">
+  <img src="./docs/hells_gate_new_design.jpeg" alt="hells_gate_new_design.jpeg" style="width: 30%; height: auto;">
+</div>
+<hr>
+
+ESP01 as simple Relays Switch
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+  <img src="./docs/switch_on.jpg" alt="switch_on.jpg" style="width: 30%; height: auto;">
+  <img src="./docs/switch_off.jpg" alt="switch_off.jpg" style="width: 30%; height: auto;">
+</div>
 
 ## Contents
 * [How to Use This Project](#how-to-use-this-project)
@@ -55,6 +66,10 @@ After the flash procedure restart the ESP. Then the ESP will open an access poin
    d) chip will reboot.
 4) the Application will be available at<br>`http://gate-xxyyzz`
 
+### Using Relays as Switch
+If you want to use the relays as switch (on/off), simply call the site:<br>
+`http://gate-xxyyzz/switch.html`
+
 ## Pins / GPIOs which are used
 | PIN     | Biasing   | usage       |
 | ------  | --------  | -----       |
@@ -74,10 +89,11 @@ The four letters represent numbers which are explained below:
 | 1      | use websocket server                          |
 
 ### B - decode GPIO 3/RX pin usage for relais
-| number | usage                            |
-| ------ | -------------------------------- |
-| 0      | Pin 3 not used for relais switch |
-| 1      | switch relais by GPIO pin 3/RX   |
+| number | usage                               |
+| ------ | --------------------------------    |
+| 0      | Pin 3 not used for relais switch    |
+| 1      | switch relais by GPIO pin 3/RX HIGH |
+| 2      | switch relais by GPIO pin 3/RX LOW  |
 
 ### C - decode additional hardware used
 | number | usage                        |
