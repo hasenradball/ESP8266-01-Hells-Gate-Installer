@@ -13,9 +13,9 @@ ESP01 as GateDoorsOpener
 
 ESP01 with new Design
 <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-  <img src="./docs/hells_gate_new_design.jpeg" alt="hells_gate_new_design.jpeg" style="width: 30%; height: auto;">
-  <img src="./docs/switch_on.jpg" alt="switch_on.jpg" style="width: 30%; height: auto;">
-  <img src="./docs/switch_off.jpg" alt="switch_off.jpg" style="width: 30%; height: auto;">
+  <img src="./docs/hells_gate_new_design.jpeg" alt="hells_gate_new_design.jpeg" style="height: 400px;">
+  <img src="./docs/switch_on.jpg" alt="switch_on.jpg" style="height: 400px;">
+  <img src="./docs/switch_off.jpg" alt="switch_off.jpg" style="height: 400px;">
 </div>
 
 ## Contents
