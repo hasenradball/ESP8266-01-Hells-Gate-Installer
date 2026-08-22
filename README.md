@@ -6,7 +6,7 @@ This is based on the official [ESP Web Tools](https://esphome.github.io/esp-web-
 
 ESP01 as GateDoorsOpener
 <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-  <img src="./docs/hells_gate.gif" alt="hell_gate.jpg" style="height: 400px;">
+  <img src="./docs/hells_gate_newDesign.gif" alt="hell_gate_newDesign.gif" style="height: 400px;">
   
 </div>
 <hr>
