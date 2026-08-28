@@ -7,7 +7,7 @@ This is based on the official [ESP Web Tools](https://esphome.github.io/esp-web-
 ESP01 as GateDoorsOpener
 <div style="display: flex; gap: 10px; flex-wrap: wrap;">
   <img src="./docs/hells_gate_newDesign.gif" alt="hell_gate_newDesign.gif" style="height: 400px;">
-  
+
 </div>
 <hr>
 
@@ -32,6 +32,13 @@ ESP01 with new Design
 
 ## How to use this Project
 This project can typically used as a door opener for a garage.
+
+### How the Hardware looks
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+  <img src="./docs/hells_gate_pcb.jpg" alt="hell_gate_pcb.jpg" style="height: 400px;">
+</div>
+
+<hr>
 
 a) The ESP can identify the state of the door normally by a reed contactor, if the door is closed the button gets green to signalize Door is closed.
 
@@ -60,7 +67,7 @@ After the flash procedure restart the ESP. Then the ESP will open an access poin
 1) connect to this access-point
 2) load the web site `http://192.168.4.1`
 3) You should see input fields
-   
+
    a) Remember the hostname `gate-xxyyzz`
    b) enter `SSID` and `password`
    c) click `ok`
